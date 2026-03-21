@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindframe — Thinking frameworks for AI agents</title>
+  <meta name="description" content="Structured mental models that make AI think better. Seven animal-based cognitive modes for Claude Code, ChatGPT, or any LLM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="top">
+    <div class="hero__bg-grain" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <p class="hero__eyebrow">thinking frameworks for AI agents</p>
+      <h1 class="hero__title">Mindframe</h1>
+      <p class="hero__subtitle">
+        Structured mental models that make AI think better.<br>
+        Install as a Claude Code plugin, use with ChatGPT, or copy the prompts into any LLM.
+      </p>
+      <a href="#install" class="btn btn--primary">Install Plugin</a>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ===== ANIMAL POWER ===== -->
+  <section class="section section--animals" id="animals">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Animal Power</h2>
+        <p class="section__subtitle">Seven animal-based cognitive modes</p>
+      </header>
+
+      <div class="animal-grid">
+
+        <!-- Rabbit -->
+        <article class="animal-card" style="--accent: #ff6b9d;">
+          <div class="animal-card__icon">
+            <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <ellipse cx="32" cy="22" rx="5" ry="16" transform="rotate(-10 32 22)"/>
+              <ellipse cx="48" cy="22" rx="5" ry="16" transform="rotate(10 48 22)"/>
+              <circle cx="40" cy="46" r="14"/>
+              <circle cx="35" cy="42" r="2" fill="currentColor" stroke="none"/>
+              <circle cx="45" cy="42" r="2" fill="currentColor" stroke="none"/>
+              <ellipse cx="40" cy="48" rx="3" ry="2"/>
+              <path d="M37 48 Q40 52 43 48"/>
+              <ellipse cx="28" cy="62" rx="5" ry="4"/>
+              <ellipse cx="52" cy="62" rx="5" ry="4"/>
+            </svg>
+          </div>
+          <h3 class="animal-card__name">Rabbit</h3>
+          <p class="animal-card__mode">Multiply Ideas</p>
+          <p class="animal-card__desc">Rabbits multiply fast. So should ideas. Generate many directions from a single starting point by shifting angle, audience, and format.</p>
+          <div class="animal-card__prompt">
+            <div class="animal-card__prompt-header">
+              <span class="animal-card__prompt-label">Prompt frame</span>
+              <button class="copy-btn" data-copy="Take this idea and multiply it into 10 different variations. For each variation: change the angle, change the audience, change the format." aria-label="Copy prompt">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+                <span class="copy-btn__text">Copy</span>
+              </button>
+            </div>
+            <pre><code>Take this idea and multiply it into 10 different variations. For each variation: change the angle, change the audience, change the format.</code></pre>
+          </div>
+        </article>
+
+        <!-- Owl -->
+        <article class="animal-card" style="--accent: #f0a030;">
+          <div class="animal-card__icon">
+            <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M24 18 L20 8 L30 16"/>
+              <path d="M56 18 L60 8 L50 16"/>
+              <ellipse cx="40" cy="42" rx="20" ry="22"/>
+              <circle cx="32" cy="36" r="9"/>
+              <circle cx="48" cy="36" r="9"/>
+              <circle cx="32" cy="36" r="4" fill="currentColor" stroke="none"/>
+              <circle cx="48" cy="36" r="4" fill="currentColor" stroke="none"/>
+              <path d="M38 46 L40 50 L42 46"/>
+              <path d="M28 54 Q40 62 52 54"/>
+              <path d="M24 48 L18 52"/>
+              <path d="M24 52 L18 56"/>
+              <path d="M56 48 L62 52"/>
+              <path d="M56 52 L62 56"/>
+            </svg>
+          </div>
+          <h3 class="animal-card__name">Owl</h3>
+          <p class="animal-card__mode">Deep Analysis</p>
+          <p class="animal-card__desc">Owls are patient, sharp-eyed, and wise. Slow down to examine what others rush past -- hidden factors, overlooked perspectives, subtle patterns.</p>
+          <div class="animal-card__prompt">
+            <div class="animal-card__prompt-header">
+              <span class="animal-card__prompt-label">Prompt frame</span>
+              <button class="copy-btn" data-copy="Think like an owl — slow, observant and analytical. Examine this problem from multiple perspectives and identify the hidden factors most people overlook." aria-label="Copy prompt">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+                <span class="copy-btn__text">Copy</span>
+              </button>
+            </div>
+            <pre><code>Think like an owl &#8212; slow, observant and analytical. Examine this problem from multiple perspectives and identify the hidden factors most people overlook.</code></pre>
+          </div>
+        </article>
+
+        <!-- Ant -->
+        <article class="animal-card" style="--accent: #4ade80;">
+          <div class="animal-card__icon">
+            <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <ellipse cx="40" cy="20" rx="8" ry="7"/>
+              <circle cx="36" cy="18" r="1.5" fill="currentColor" stroke="none"/>
+              <circle cx="44" cy="18" r="1.5" fill="currentColor" stroke="none"/>
+              <path d="M34 14 L28 6"/>
+              <path d="M46 14 L52 6"/>
+              <ellipse cx="40" cy="36" rx="10" ry="9"/>
+              <ellipse cx="40" cy="56" rx="12" ry="11"/>
+              <path d="M30 32 L18 24"/>
+              <path d="M30 38 L16 38"/>
+              <path d="M30 44 L18 52"/>
+              <path d="M50 32 L62 24"/>
+              <path d="M50 38 L64 38"/>
+              <path d="M50 44 L62 52"/>
+            </svg>
+          </div>
+          <h3 class="animal-card__name">Ant</h3>
+          <p class="animal-card__mode">Small Steps</p>
+          <p class="animal-card__desc">Ants don't carry the whole load at once. Break massive undertakings into tiny, persistent steps -- the smallest realistic actions.</p>
+          <div class="animal-card__prompt">
+            <div class="animal-card__prompt-header">
+              <span class="animal-card__prompt-label">Prompt frame</span>
+              <button class="copy-btn" data-copy="Think like an ant. Break this goal into the smallest possible steps someone could realistically complete." aria-label="Copy prompt">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+                <span class="copy-btn__text">Copy</span>
+              </button>
+            </div>
+            <pre><code>Think like an ant. Break this goal into the smallest possible steps someone could realistically complete.</code></pre>
+          </div>
+        </article>
+
+        <!-- Dolphin -->
+        <article class="animal-card" style="--accent: #38bdf8;">
+          <div class="animal-card__icon">
+            <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 44 Q20 16 44 20 Q56 22 62 30 L68 26 L66 34 Q70 42 64 52 Q56 64 38 64 Q24 64 16 54 Q12 48 14 44Z"/>
+              <circle cx="50" cy="32" r="2" fill="currentColor" stroke="none"/>
+              <path d="M60 38 Q54 42 48 40"/>
+              <path d="M20 50 Q28 56 36 52"/>
+              <path d="M22 44 Q30 48 34 44"/>
+            </svg>
+          </div>
+          <h3 class="animal-card__name">Dolphin</h3>
+          <p class="animal-card__mode">Creative Solutions</p>
+          <p class="animal-card__desc">Dolphins are curious, playful, and inventive. Encourage unconventional ideas that most people wouldn't consider.</p>
+          <div class="animal-card__prompt">
+            <div class="animal-card__prompt-header">
+              <span class="animal-card__prompt-label">Prompt frame</span>
+              <button class="copy-btn" data-copy="Think like a dolphin — curious, playful and inventive. Generate creative solutions to this problem that most people wouldn't normally consider." aria-label="Copy prompt">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+                <span class="copy-btn__text">Copy</span>
+              </button>
+            </div>
+            <pre><code>Think like a dolphin &#8212; curious, playful and inventive. Generate creative solutions to this problem that most people wouldn't normally consider.</code></pre>
+          </div>
+        </article>
+
+        <!-- Eagle -->
+        <article class="animal-card" style="--accent: #fbbf24;">
+          <div class="animal-card__icon">
+            <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M40 20 Q42 14 46 18 L44 24"/>
+              <path d="M36 26 Q30 24 28 28 Q26 32 30 34 L40 30 L50 34 Q54 32 52 28 Q50 24 44 26 L40 30"/>
+              <circle cx="36" cy="28" r="1.5" fill="currentColor" stroke="none"/>
+              <circle cx="44" cy="28" r="1.5" fill="currentColor" stroke="none"/>
+              <path d="M30 34 Q20 38 8 34 Q14 42 26 42"/>
+              <path d="M50 34 Q60 38 72 34 Q66 42 54 42"/>
+              <ellipse cx="40" cy="46" rx="14" ry="10"/>
+              <path d="M32 54 L28 68"/>
+              <path d="M48 54 L52 68"/>
+              <path d="M24 68 L32 68"/>
+              <path d="M48 68 L56 68"/>
+            </svg>
+          </div>
+          <h3 class="animal-card__name">Eagle</h3>
+          <p class="animal-card__mode">Big Picture Strategy</p>
+          <p class="animal-card__desc">Eagles soar high and see the entire landscape at once. Pull back from details to reveal how all the pieces connect.</p>
+          <div class="animal-card__prompt">
+            <div class="animal-card__prompt-header">
+              <span class="animal-card__prompt-label">Prompt frame</span>
+              <button class="copy-btn" data-copy="Think like an eagle flying high above the landscape. Explain the long-term strategy behind this idea and how the pieces connect." aria-label="Copy prompt">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+                <span class="copy-btn__text">Copy</span>
+              </button>
+            </div>
+            <pre><code>Think like an eagle flying high above the landscape. Explain the long-term strategy behind this idea and how the pieces connect.</code></pre>
+          </div>
+        </article>
+
+        <!-- Beaver -->
+        <article class="animal-card" style="--accent: #c4956a;">
+          <div class="animal-card__icon">
+            <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <ellipse cx="40" cy="36" rx="18" ry="16"/>
+              <circle cx="34" cy="32" r="2" fill="currentColor" stroke="none"/>
+              <circle cx="46" cy="32" r="2" fill="currentColor" stroke="none"/>
+              <ellipse cx="40" cy="40" rx="5" ry="3"/>
+              <rect x="37" y="43" width="3" height="5" rx="0.5" fill="currentColor" stroke="none"/>
+              <rect x="41" y="43" width="3" height="5" rx="0.5" fill="currentColor" stroke="none"/>
+              <path d="M22 36 Q16 34 14 38 Q12 42 18 42"/>
+              <path d="M58 36 Q64 34 66 38 Q68 42 62 42"/>
+              <ellipse cx="40" cy="58" rx="16" ry="10"/>
+              <path d="M40 68 Q40 76 50 74 Q60 72 58 66" stroke-width="3"/>
+            </svg>
+          </div>
+          <h3 class="animal-card__name">Beaver</h3>
+          <p class="animal-card__mode">Practical Systems</p>
+          <p class="animal-card__desc">Beavers build dams -- complex, functional structures assembled methodically. Design practical systems with clear sequential steps.</p>
+          <div class="animal-card__prompt">
+            <div class="animal-card__prompt-header">
+              <span class="animal-card__prompt-label">Prompt frame</span>
+              <button class="copy-btn" data-copy="Think like a beaver building a dam. Design a practical system that solves this problem step by step." aria-label="Copy prompt">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+                <span class="copy-btn__text">Copy</span>
+              </button>
+            </div>
+            <pre><code>Think like a beaver building a dam. Design a practical system that solves this problem step by step.</code></pre>
+          </div>
+        </article>
+
+        <!-- Elephant -->
+        <article class="animal-card" style="--accent: #a78bfa;">
+          <div class="animal-card__icon">
+            <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 30 Q22 16 32 14 Q40 12 48 14 Q58 16 58 30"/>
+              <path d="M22 30 Q16 32 14 40 Q12 48 18 50 L22 46"/>
+              <path d="M58 30 Q64 32 66 40 Q68 48 62 50 L58 46"/>
+              <ellipse cx="40" cy="42" rx="18" ry="16"/>
+              <circle cx="30" cy="34" r="3"/>
+              <circle cx="50" cy="34" r="3"/>
+              <circle cx="30" cy="34" r="1.5" fill="currentColor" stroke="none"/>
+              <circle cx="50" cy="34" r="1.5" fill="currentColor" stroke="none"/>
+              <path d="M40 42 Q38 48 34 56 Q32 62 36 64" stroke-width="2.5"/>
+              <path d="M26 56 L24 70"/>
+              <path d="M54 56 L56 70"/>
+              <path d="M34 56 L32 70"/>
+              <path d="M46 56 L48 70"/>
+              <path d="M20 70 L28 70"/>
+              <path d="M44 70 L52 70"/>
+            </svg>
+          </div>
+          <h3 class="animal-card__name">Elephant</h3>
+          <p class="animal-card__mode">Cross-Disciplinary</p>
+          <p class="animal-card__desc">Elephants have powerful memories and deep social intelligence. Connect ideas to insights from entirely different fields.</p>
+          <div class="animal-card__prompt">
+            <div class="animal-card__prompt-header">
+              <span class="animal-card__prompt-label">Prompt frame</span>
+              <button class="copy-btn" data-copy="Think like an elephant with a powerful memory. Connect this idea to insights from other fields such as psychology, economics, science or history." aria-label="Copy prompt">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+                <span class="copy-btn__text">Copy</span>
+              </button>
+            </div>
+            <pre><code>Think like an elephant with a powerful memory. Connect this idea to insights from other fields such as psychology, economics, science or history.</code></pre>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW TO USE ===== -->
+  <section class="section section--usage" id="usage">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">How to Use</h2>
+        <p class="section__subtitle">Three ways to activate animal thinking</p>
+      </header>
+
+      <div class="usage-modes">
+
+        <div class="usage-block">
+          <h3 class="usage-block__title">
+            <span class="usage-block__number">01</span>
+            Single Animal Mode
+          </h3>
+          <p class="usage-block__desc">Specify an animal directly or describe what you need. Mindframe maps your intent to the right cognitive mode.</p>
+          <div class="usage-block__examples">
+            <div class="usage-example">
+              <span class="usage-example__label">You say</span>
+              <code>"Use rabbit mode on this brief"</code>
+            </div>
+            <div class="usage-example">
+              <span class="usage-example__label">Or just</span>
+              <code>"I need lots of ideas for this"</code>
+            </div>
+          </div>
+        </div>
+
+        <div class="usage-block">
+          <h3 class="usage-block__title">
+            <span class="usage-block__number">02</span>
+            Auto-Select Mode
+          </h3>
+          <p class="usage-block__desc">Describe what you need and Mindframe picks the right animal for you.</p>
+          <div class="usage-table-wrap">
+            <table class="usage-table">
+              <thead>
+                <tr>
+                  <th>You say</th>
+                  <th>Animal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>"Give me lots of options"</td><td><span class="badge" style="--accent:#ff6b9d">Rabbit</span></td></tr>
+                <tr><td>"Analyze this deeply"</td><td><span class="badge" style="--accent:#f0a030">Owl</span></td></tr>
+                <tr><td>"Break this into steps"</td><td><span class="badge" style="--accent:#4ade80">Ant</span></td></tr>
+                <tr><td>"Get creative with this"</td><td><span class="badge" style="--accent:#38bdf8">Dolphin</span></td></tr>
+                <tr><td>"Show me the big picture"</td><td><span class="badge" style="--accent:#fbbf24">Eagle</span></td></tr>
+                <tr><td>"Build me a system for this"</td><td><span class="badge" style="--accent:#c4956a">Beaver</span></td></tr>
+                <tr><td>"Connect this to other fields"</td><td><span class="badge" style="--accent:#a78bfa">Elephant</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="usage-block">
+          <h3 class="usage-block__title">
+            <span class="usage-block__number">03</span>
+            Multi-Animal Mode
+          </h3>
+          <p class="usage-block__desc">Combine animals for more powerful thinking. Use these recipes or invent your own.</p>
+          <div class="combo-grid">
+            <div class="combo-card">
+              <div class="combo-card__animals">
+                <span class="badge" style="--accent:#ff6b9d">Rabbit</span>
+                <span class="combo-card__plus">+</span>
+                <span class="badge" style="--accent:#f0a030">Owl</span>
+              </div>
+              <p class="combo-card__desc">Diverge then converge. Generate many ideas, then deeply analyze the best ones.</p>
+            </div>
+            <div class="combo-card">
+              <div class="combo-card__animals">
+                <span class="badge" style="--accent:#fbbf24">Eagle</span>
+                <span class="combo-card__plus">+</span>
+                <span class="badge" style="--accent:#4ade80">Ant</span>
+              </div>
+              <p class="combo-card__desc">Strategy to action. See the big picture, then break it into executable steps.</p>
+            </div>
+            <div class="combo-card">
+              <div class="combo-card__animals">
+                <span class="badge" style="--accent:#38bdf8">Dolphin</span>
+                <span class="combo-card__plus">+</span>
+                <span class="badge" style="--accent:#c4956a">Beaver</span>
+              </div>
+              <p class="combo-card__desc">Dream then build. Generate creative solutions, then design the practical system.</p>
+            </div>
+            <div class="combo-card">
+              <div class="combo-card__animals">
+                <span class="badge" style="--accent:#a78bfa">Elephant</span>
+                <span class="combo-card__plus">+</span>
+                <span class="badge" style="--accent:#f0a030">Owl</span>
+              </div>
+              <p class="combo-card__desc">Cross-pollinate then scrutinize. Draw from other fields, then rigorously analyze.</p>
+            </div>
+            <div class="combo-card combo-card--full">
+              <div class="combo-card__animals">
+                <span class="badge" style="--accent:#ff6b9d">Rabbit</span>
+                <span class="combo-card__plus">+</span>
+                <span class="badge" style="--accent:#f0a030">Owl</span>
+                <span class="combo-card__plus">+</span>
+                <span class="badge" style="--accent:#4ade80">Ant</span>
+                <span class="combo-card__plus">+</span>
+                <span class="badge" style="--accent:#38bdf8">Dolphin</span>
+                <span class="combo-card__plus">+</span>
+                <span class="badge" style="--accent:#fbbf24">Eagle</span>
+                <span class="combo-card__plus">+</span>
+                <span class="badge" style="--accent:#c4956a">Beaver</span>
+                <span class="combo-card__plus">+</span>
+                <span class="badge" style="--accent:#a78bfa">Elephant</span>
+              </div>
+              <p class="combo-card__label">Full Safari</p>
+              <p class="combo-card__desc">Run all seven modes in sequence for the most thorough exploration of any problem.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSTALL ===== -->
+  <section class="section section--install" id="install">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Install</h2>
+        <p class="section__subtitle">Get started in under a minute</p>
+      </header>
+
+      <div class="tabs" role="tablist" aria-label="Installation methods">
+        <button class="tab tab--active" role="tab" aria-selected="true" aria-controls="panel-claude" id="tab-claude">Claude Code</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-npm" id="tab-npm">npm</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-chatgpt" id="tab-chatgpt">ChatGPT</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-manual" id="tab-manual">Manual</button>
+      </div>
+
+      <div class="tab-panels">
+        <div class="tab-panel tab-panel--active" role="tabpanel" id="panel-claude" aria-labelledby="tab-claude">
+          <p class="tab-panel__intro">Run this command in your terminal:</p>
+          <div class="install-code">
+            <pre><code>/install github.com/louisgillies/mindframe</code></pre>
+            <button class="copy-btn" data-copy="/install github.com/louisgillies/mindframe" aria-label="Copy install command">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+              <span class="copy-btn__text">Copy</span>
+            </button>
+          </div>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-npm" aria-labelledby="tab-npm" hidden>
+          <p class="tab-panel__intro">Install globally via npm:</p>
+          <div class="install-code">
+            <pre><code>npm install -g mindframe</code></pre>
+            <button class="copy-btn" data-copy="npm install -g mindframe" aria-label="Copy install command">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+              <span class="copy-btn__text">Copy</span>
+            </button>
+          </div>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-chatgpt" aria-labelledby="tab-chatgpt" hidden>
+          <div class="tab-panel__notice">
+            <p><strong>A Custom GPT version is coming soon.</strong></p>
+            <p>In the meantime, check the <a href="https://github.com/louisgillies/mindframe#chatgpt">setup guide</a> in the README for instructions on using Mindframe prompts with ChatGPT.</p>
+          </div>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-manual" aria-labelledby="tab-manual" hidden>
+          <div class="tab-panel__notice">
+            <p>Copy the prompt frames above into any LLM's system prompt or conversation. No installation required -- just paste and go.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__credit">Inspired by <a href="https://www.tomsguide.com/ai/i-use-the-rabbit-prompt-for-multiplying-my-ideas-and-its-a-game-changer" target="_blank" rel="noopener">Amanda Caswell's article on Tom's Guide</a></p>
+      <div class="footer__links">
+        <a href="https://github.com/louisgillies/mindframe" target="_blank" rel="noopener" class="footer__link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <span class="footer__sep" aria-hidden="true">/</span>
+        <span class="footer__license">MIT License</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== INLINE JS ===== -->
+  <script>
+    /* Tab switching */
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const panelId = tab.getAttribute('aria-controls');
+
+        document.querySelectorAll('.tab').forEach(t => {
+          t.classList.remove('tab--active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        document.querySelectorAll('.tab-panel').forEach(p => {
+          p.classList.remove('tab-panel--active');
+          p.hidden = true;
+        });
+
+        tab.classList.add('tab--active');
+        tab.setAttribute('aria-selected', 'true');
+        const panel = document.getElementById(panelId);
+        panel.classList.add('tab-panel--active');
+        panel.hidden = false;
+      });
+    });
+
+    /* Copy to clipboard */
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const text = btn.getAttribute('data-copy');
+        const label = btn.querySelector('.copy-btn__text');
+        navigator.clipboard.writeText(text).then(() => {
+          const original = label.textContent;
+          label.textContent = 'Copied!';
+          btn.classList.add('copy-btn--copied');
+          setTimeout(() => {
+            label.textContent = original;
+            btn.classList.remove('copy-btn--copied');
+          }, 2000);
+        });
+      });
+    });
+
+    /* Stagger card reveal on scroll */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animal-card, .usage-block, .combo-card').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

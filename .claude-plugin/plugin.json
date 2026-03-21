@@ -1,0 +1,12 @@
+{
+  "name": "mindframe",
+  "description": "Thinking framework skills for Claude Code: animal-based cognitive modes for brainstorming, analysis, planning, and creative problem-solving",
+  "version": "1.0.0",
+  "author": {
+    "name": "Louis G"
+  },
+  "homepage": "https://louisgillies.github.io/mindframe",
+  "repository": "https://github.com/louisgillies/mindframe",
+  "license": "MIT",
+  "keywords": ["skills", "thinking-frameworks", "brainstorming", "creativity", "analysis", "mental-models"]
+}

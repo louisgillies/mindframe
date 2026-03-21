@@ -1,0 +1,27 @@
+{
+  "name": "mindframe",
+  "version": "1.0.0",
+  "description": "Thinking framework skills for Claude Code and other AI coding agents",
+  "main": "SKILL.md",
+  "scripts": {
+    "postinstall": "node bin/install.js install",
+    "preuninstall": "node bin/install.js uninstall"
+  },
+  "keywords": [
+    "claude-code",
+    "skills",
+    "ai",
+    "thinking-frameworks",
+    "brainstorming",
+    "creativity",
+    "mental-models",
+    "agent-skills"
+  ],
+  "author": "Louis G",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/louisgillies/mindframe"
+  },
+  "homepage": "https://louisgillies.github.io/mindframe"
+}
