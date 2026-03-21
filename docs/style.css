@@ -93,7 +93,7 @@ img, svg {
 .hero__bg-grain {
   position: absolute;
   inset: 0;
-  opacity: 0.35;
+  opacity: 0.15;
   pointer-events: none;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E");
   background-repeat: repeat;
@@ -215,9 +215,8 @@ img, svg {
   color: var(--text-2);
 }
 
-/* Divider between major sections */
+/* Top-edge divider for usage and install sections */
 .section--animals::before,
-.section--usage::before,
 .section--install::before {
   content: '';
   display: block;
@@ -225,6 +224,35 @@ img, svg {
   height: 1px;
   background: var(--border);
   margin: 0 auto 4rem;
+}
+
+/* ========================================
+   SECTION DIVIDER (between Animals and How to Use)
+   ======================================== */
+.section-divider {
+  padding: 1rem 0;
+}
+
+.section-divider .container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.section-divider__line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-hover), transparent);
+}
+
+.section-divider__ornament {
+  color: var(--text-3);
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.section-divider__ornament svg {
+  display: block;
 }
 
 /* ========================================
@@ -253,7 +281,6 @@ img, svg {
   border: 1px solid var(--border);
   border-radius: var(--card-radius);
   padding: 1.75rem 1.5rem 1.5rem;
-  transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), border-color 0.35s var(--ease-out);
   position: relative;
   overflow: hidden;
 
@@ -291,15 +318,15 @@ img, svg {
   transition: opacity 0.35s var(--ease-out);
 }
 
-/* Subtle radial glow */
+/* Radial accent glow behind card on hover */
 .animal-card::after {
   content: '';
   position: absolute;
   top: -40%;
   left: 50%;
   transform: translateX(-50%);
-  width: 120%;
-  height: 80%;
+  width: 140%;
+  height: 90%;
   background: radial-gradient(ellipse at center, var(--accent), transparent 70%);
   opacity: 0;
   transition: opacity 0.5s var(--ease-out);
@@ -307,9 +334,11 @@ img, svg {
 }
 
 .animal-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--border-hover);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 40px color-mix(in srgb, var(--accent) 8%, transparent);
 }
 
 .animal-card:hover::before {
@@ -317,7 +346,7 @@ img, svg {
 }
 
 .animal-card:hover::after {
-  opacity: 0.04;
+  opacity: 0.06;
 }
 
 /* Icon */
@@ -390,14 +419,14 @@ img, svg {
   background: var(--bg-deep);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 1rem;
+  padding: 1.15rem 1.25rem;
   overflow-x: auto;
 }
 
 .animal-card__prompt code {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  line-height: 1.55;
+  line-height: 1.6;
   color: var(--text-2);
   white-space: pre-wrap;
   word-break: break-word;
@@ -594,13 +623,14 @@ img, svg {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--card-radius);
-  padding: 1.25rem 1.5rem;
-  transition: border-color 0.3s var(--ease-out);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
 
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out),
-              border-color 0.3s var(--ease-out);
+              border-color 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
 }
 
 .combo-card.revealed {
@@ -616,12 +646,34 @@ img, svg {
 
 .combo-card:hover {
   border-color: var(--border-hover);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Subtle gradient accent on combo cards */
+.combo-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-hover), transparent);
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-out);
+}
+
+.combo-card:hover::before {
+  opacity: 1;
 }
 
 .combo-card--full {
   grid-column: 1 / -1;
   text-align: center;
   padding: 2rem;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(167, 139, 250, 0.03) 0%, transparent 70%),
+    var(--surface);
 }
 
 .combo-card__animals {
@@ -639,6 +691,15 @@ img, svg {
 .combo-card__plus {
   color: var(--text-3);
   font-size: 0.85rem;
+}
+
+.combo-card__recipe {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-1);
+  margin-bottom: 0.35rem;
+  opacity: 0.85;
 }
 
 .combo-card__label {
@@ -934,6 +995,10 @@ img, svg {
 
   .footer__inner {
     gap: 0.75rem;
+  }
+
+  .section-divider {
+    padding: 0.5rem 0;
   }
 }
 
