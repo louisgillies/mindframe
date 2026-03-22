@@ -7,6 +7,7 @@ Thinking framework skills for Claude Code and other AI agents.
 | Skill | Description | Details |
 |-------|-------------|---------|
 | Animal Magic | Seven animal-based thinking frameworks for brainstorming, analysis, planning, and creative problem-solving | [skills/animal-magic/SKILL.md](skills/animal-magic/SKILL.md) |
+| Dinner Party | Assemble history's greatest thinkers to debate your ideas — 40 guests tagged by locale, era, domain, and thinking style | [skills/dinner-party/SKILL.md](skills/dinner-party/SKILL.md) |
 
 ## Animal Magic Quick Reference
 
@@ -43,6 +44,25 @@ git clone https://github.com/louisgillies/mindframe.git
 cp -r mindframe/skills/* ~/.claude/skills/
 ```
 
+## Dinner Party Quick Reference
+
+40 thinkers tagged across 5 dimensions for dynamic table assembly:
+
+| Dimension | Examples |
+|-----------|----------|
+| Locale | british, scottish, french, italian, american, indian, chinese, japanese, kenyan, nigerian, colombian, mexican... |
+| Era | ancient, medieval, renaissance, enlightenment, victorian, modern |
+| Domain | science, mathematics, philosophy, politics, engineering, art, literature, economics, medicine, computing... |
+| Thinking | systems, reductionist, creative, pragmatic, empirical, humanist, abstract, first-principles... |
+| Energy | visionary, skeptic, provocateur, mediator, observer, pioneer, builder, strategist, connector |
+
+```
+"Dinner party: should I quit my job to start a company?"
+"Get the British scientists to debate whether AI will replace programmers"
+"Renaissance dinner party about modern social media"
+"Full dinner on the future of education — use the Scottish Enlightenment table"
+```
+
 ## Usage
 
 Invoke any animal mode by describing how you want to think:
@@ -55,9 +75,12 @@ Invoke any animal mode by describing how you want to think:
 
 You can also let the skill auto-select the best animal for your request -- just describe what you need and the framework picks the right mode. For complex problems, ask for multi-animal analysis to run several lenses in sequence (e.g. Eagle for big-picture strategy, then Ant for actionable steps).
 
-## Custom GPT
+## Custom GPTs
 
-A ChatGPT GPT version of Animal Magic is available. See [gpt/animal-magic/setup-guide.md](gpt/animal-magic/setup-guide.md) for setup instructions.
+ChatGPT GPT versions are available for each skill:
+
+- **Animal Magic**: See [gpt/animal-magic/setup-guide.md](gpt/animal-magic/setup-guide.md)
+- **Dinner Party**: See [gpt/dinner-party/setup-guide.md](gpt/dinner-party/setup-guide.md)
 
 ## Website
 
