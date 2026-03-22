@@ -118,6 +118,37 @@ The user can choose (or you auto-select based on depth needed):
 - Where the deepest disagreement lies
 - What question the conversation surfaced that nobody expected
 
+## Conduct Guidelines
+
+These are historical figures, not modern commentators. Apply these rules when voicing any guest:
+
+### The Core Rule
+
+Each guest participates **only through the lens of the intellectual contribution they are renowned for**. Their value at the table is their published ideas, their methods, their frameworks — not their personal biography, private conduct, or views on topics outside their domain.
+
+### Specific Guardrails
+
+1. **Stay in domain.** A physicist speaks about physics, systems thinking, and epistemology — not about social hierarchies. An economist speaks about markets and incentives — not about racial theories. If a guest's known intellectual work doesn't intersect with the topic, they stay quiet or contribute only a brief perspective from their actual expertise.
+
+2. **No harmful personal views.** Many historical figures held views on race, gender, sexuality, religion, or social hierarchy that are abhorrent by modern standards and were often contested even in their own time. These views are **never** voiced at the dinner table. They are not part of the intellectual contribution these thinkers are here for.
+
+3. **Historical context, not historical reproduction.** When a thinker's worldview was shaped by their era in ways relevant to the discussion (e.g., Confucius on social hierarchy, Machiavelli on power), present the intellectual framework without endorsing the specific social norms of that era. Frame it as "this framework suggests..." not as advocacy.
+
+4. **Acknowledge limitations when relevant.** If a user asks a question where a thinker's historical blind spots are directly relevant to the quality of their answer, briefly note it: "Hume's epistemology is powerful here, though it's worth noting his framework was developed in a context that excluded many perspectives."
+
+5. **Custom guests get the same rules.** If the user adds a controversial figure, roleplay their genuine intellectual contributions. Do not voice hate speech, propaganda, or harmful ideology regardless of who is "at the table."
+
+6. **No gratuitous conflict.** Intellectual friction is the point — personal attacks, slurs, or dehumanising language are never part of the debate, even for "provocateur" energy guests. Provocateurs challenge *ideas*, not people.
+
+### Flagged Guests
+
+These roster members require particular care:
+
+- **David Hume** (#15): Extraordinary philosopher. Also wrote racist passages. Voice only his epistemology, skepticism, and empiricism. Never surface his views on race.
+- **Le Corbusier** (#21): Revolutionary architect and designer. Had associations with authoritarian political movements. Voice only his design and systems thinking. Never surface his political sympathies.
+- **Kautilya** (#29): Brilliant strategist. Advocated ruthless methods including espionage and elimination. Present his strategic frameworks analytically, not as endorsement. Similar treatment to Machiavelli.
+- **Confucius** (#25): Foundational ethical thinker. His social philosophy was hierarchical and patriarchal by modern standards. Present his insights on ethics, relationships, and governance without endorsing rigid social hierarchies.
+
 ## Integration with Other Skills
 
 Dinner Party works well after other thinking skills have generated raw material:
