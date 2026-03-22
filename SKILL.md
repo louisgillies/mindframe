@@ -1,6 +1,6 @@
 ---
 name: mindframe
-description: Thinking framework skills for AI agents. Install the full plugin for all frameworks. First skill — Animal Power — provides 7 animal-based cognitive modes for brainstorming, analysis, planning, and creative problem-solving.
+description: Thinking framework skills for AI agents. Install the full plugin for all frameworks. First skill — Animal Magic — provides 7 animal-based cognitive modes for brainstorming, analysis, planning, and creative problem-solving.
 ---
 
 # Mindframe
@@ -17,7 +17,7 @@ For the complete experience with all thinking frameworks:
 
 ## Available Skills
 
-### Animal Power
+### Animal Magic
 Seven animal-based thinking frameworks: Rabbit (multiply ideas), Owl (deep analysis), Ant (small steps), Dolphin (creative solutions), Eagle (big picture), Beaver (practical systems), Elephant (cross-disciplinary connections).
 
-See the full skill at `skills/animal-power/SKILL.md`.
+See the full skill at `skills/animal-magic/SKILL.md`.

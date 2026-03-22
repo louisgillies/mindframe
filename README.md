@@ -6,9 +6,9 @@ Thinking framework skills for Claude Code and other AI agents.
 
 | Skill | Description | Details |
 |-------|-------------|---------|
-| Animal Power | Seven animal-based thinking frameworks for brainstorming, analysis, planning, and creative problem-solving | [skills/animal-power/SKILL.md](skills/animal-power/SKILL.md) |
+| Animal Magic | Seven animal-based thinking frameworks for brainstorming, analysis, planning, and creative problem-solving | [skills/animal-magic/SKILL.md](skills/animal-magic/SKILL.md) |
 
-## Animal Power Quick Reference
+## Animal Magic Quick Reference
 
 | Animal | Mode | Best For |
 |--------|------|----------|
@@ -57,7 +57,7 @@ You can also let the skill auto-select the best animal for your request -- just 
 
 ## Custom GPT
 
-A ChatGPT GPT version of Animal Power is available. See [gpt/animal-power/setup-guide.md](gpt/animal-power/setup-guide.md) for setup instructions.
+A ChatGPT GPT version of Animal Magic is available. See [gpt/animal-magic/setup-guide.md](gpt/animal-magic/setup-guide.md) for setup instructions.
 
 ## Website
 
@@ -71,7 +71,7 @@ A ChatGPT GPT version of Animal Power is available. See [gpt/animal-power/setup-
 
 ## Attribution
 
-The Animal Power framework is inspired by [Amanda Caswell's article on Tom's Guide](https://www.tomsguide.com/ai/i-use-the-rabbit-prompt-for-multiplying-my-ideas-and-its-a-game-changer).
+The Animal Magic framework is inspired by [Amanda Caswell's article on Tom's Guide](https://www.tomsguide.com/ai/i-use-the-rabbit-prompt-for-multiplying-my-ideas-and-its-a-game-changer).
 
 ## License
 

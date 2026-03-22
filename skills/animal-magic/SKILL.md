@@ -1,9 +1,9 @@
 ---
-name: animal-power
+name: animal-magic
 description: Apply animal-based thinking frameworks to ideas, problems, and goals. Use this skill whenever the user wants to brainstorm, multiply ideas, analyze deeply, break down goals, think creatively, see the big picture, build systems, or connect across disciplines. Trigger on any mention of "animal power", "animal prompt", "rabbit prompt", "think like a [animal]", or when the user asks for idea generation, strategic analysis, creative problem-solving, step-by-step breakdowns, system design, or cross-disciplinary thinking — even if they don't mention animals. Also use when the user says things like "give me variations", "break this down", "think outside the box", "zoom out", "build a plan", or "what can I learn from other fields".
 ---
 
-# Animal Power
+# Animal Magic
 
 Seven animal-based thinking frameworks that each activate a distinct cognitive mode. Each animal is a mental model — a shorthand that instantly communicates *how* to approach a problem.
 

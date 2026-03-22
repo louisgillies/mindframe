@@ -1,6 +1,6 @@
-# Animal Power — Custom GPT Setup Guide
+# Animal Magic — Custom GPT Setup Guide
 
-Step-by-step instructions for creating the Animal Power GPT in ChatGPT.
+Step-by-step instructions for creating the Animal Magic GPT in ChatGPT.
 
 ## Steps
 
@@ -12,7 +12,7 @@ Step-by-step instructions for creating the Animal Power GPT in ChatGPT.
 
    **Name**
    ```
-   Animal Power
+   Animal Magic
    ```
 
    **Description**
