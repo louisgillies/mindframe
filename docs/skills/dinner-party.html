@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinner Party — Mindframe</title>
+  <meta name="description" content="Assemble 40 of history's greatest thinkers to debate your ideas. Filter by locale, era, domain, and more.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="site-nav">
+    <div class="container site-nav__inner">
+      <a href="../" class="site-nav__logo">Mindframe</a>
+      <div class="site-nav__links">
+        <div class="site-nav__dropdown">
+          <button class="site-nav__dropdown-trigger">Skills &#9662;</button>
+          <div class="site-nav__dropdown-menu">
+            <a href="animal-magic.html">Animal Magic</a>
+            <a href="dinner-party.html" aria-current="page">Dinner Party</a>
+          </div>
+        </div>
+        <a href="../#install">Install</a>
+        <a href="https://github.com/louisgillies/mindframe" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <button class="site-nav__burger" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="breadcrumb container">
+    <a href="../">Mindframe</a> <span>&rarr;</span> <span>Dinner Party</span>
+  </div>
+
+  <!-- ===== SKILL HERO ===== -->
+  <header class="skill-hero container">
+    <h1 class="skill-hero__title">Dinner Party</h1>
+    <p class="skill-hero__subtitle">Assemble history's greatest thinkers to debate your ideas</p>
+    <p class="skill-hero__intro">Bring your idea to a table of 40 historical minds. They debate from their real worldviews, their real blind spots, and their real intellectual style. The value is in the friction between them.</p>
+  </header>
+
+  <!-- ===== FEATURE CARDS ===== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-card" style="--accent: #f0a030;" data-reveal>
+          <h3>Tagged Guest Roster</h3>
+          <p>40 thinkers tagged by locale, era, domain, thinking style, and energy. Filter and combine to build the table you need.</p>
+        </div>
+        <div class="feature-card" style="--accent: #38bdf8;" data-reveal>
+          <h3>Three Conversation Modes</h3>
+          <p>Quick round for breadth, debate for friction, full dinner for the complete arc from positions to synthesis.</p>
+        </div>
+        <div class="feature-card" style="--accent: #a78bfa;" data-reveal>
+          <h3>Smart Assembly</h3>
+          <p>Auto-selects guests with productive friction. At least two domains, one skeptic, one builder, and direct relevance to your topic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTERACTIVE GUEST ROSTER ===== -->
+  <section class="section" id="roster">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">The 40 Guests</h2>
+        <p class="section__subtitle">Filter by any dimension to build your table</p>
+      </header>
+
+      <!-- Search -->
+      <div class="roster-search">
+        <input type="text" id="guest-search" class="roster-search__input" placeholder="Search guests by name, field, or description...">
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="roster-filters" id="roster-filters">
+        <div class="filter-group" data-dimension="locale">
+          <span class="filter-group__label">Locale</span>
+          <div class="filter-group__pills"></div>
+        </div>
+        <div class="filter-group" data-dimension="era">
+          <span class="filter-group__label">Era</span>
+          <div class="filter-group__pills"></div>
+        </div>
+        <div class="filter-group" data-dimension="domain">
+          <span class="filter-group__label">Domain</span>
+          <div class="filter-group__pills"></div>
+        </div>
+        <div class="filter-group" data-dimension="thinking">
+          <span class="filter-group__label">Thinking</span>
+          <div class="filter-group__pills"></div>
+        </div>
+        <div class="filter-group" data-dimension="energy">
+          <span class="filter-group__label">Energy</span>
+          <div class="filter-group__pills"></div>
+        </div>
+        <button class="filter-clear" id="filter-clear">Clear all filters</button>
+      </div>
+
+      <!-- Count -->
+      <p class="roster-count" id="roster-count">Showing 40 of 40 guests</p>
+
+      <!-- Guest Grid (rendered by JS) -->
+      <div class="roster-grid" id="roster-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== CONVERSATION MODES ===== -->
+  <section class="section" id="modes">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Conversation Modes</h2>
+        <p class="section__subtitle">Choose how deep the table goes</p>
+      </header>
+
+      <div class="modes-wrap">
+        <div class="tabs" role="tablist" aria-label="Conversation modes">
+          <button class="tab tab--active" data-tab="quick-round">Quick Round</button>
+          <button class="tab" data-tab="debate">Debate</button>
+          <button class="tab" data-tab="full-dinner">Full Dinner</button>
+        </div>
+        <div class="tab-panels">
+          <div class="tab-panel tab-panel--active" data-panel="quick-round">
+            <p class="tab-panel__intro" style="margin-bottom: 1.25rem;">Each guest gives their take in 2-3 sentences. Fast, scannable, covers breadth.</p>
+            <div class="install-code">
+              <pre><code>Quick round: what would the table think about remote work?</code></pre>
+              <button class="copy-btn" data-copy="Quick round: what would the table think about remote work?" aria-label="Copy prompt">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+                <span class="copy-btn__text">Copy</span>
+              </button>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel="debate" hidden>
+            <p class="tab-panel__intro" style="margin-bottom: 1.25rem;">Guests respond to each other. Real intellectual friction. 2-3 exchanges between the most interesting pairings.</p>
+            <div class="install-code">
+              <pre><code>Get the British scientists to debate whether AI will replace programmers</code></pre>
+              <button class="copy-btn" data-copy="Get the British scientists to debate whether AI will replace programmers" aria-label="Copy prompt">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+                <span class="copy-btn__text">Copy</span>
+              </button>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel="full-dinner" hidden>
+            <p class="tab-panel__intro" style="margin-bottom: 1.25rem;">Quick round first, then debate the disagreements, then synthesis -- what did the table agree on, and where is the unresolved tension?</p>
+            <div class="install-code">
+              <pre><code>Full dinner on the future of education — use the Scottish Enlightenment table</code></pre>
+              <button class="copy-btn" data-copy="Full dinner on the future of education — use the Scottish Enlightenment table" aria-label="Copy prompt">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+                <span class="copy-btn__text">Copy</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXAMPLES ===== -->
+  <section class="section" id="examples">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Try It</h2>
+        <p class="section__subtitle">Copy a prompt and paste it into Claude Code or any LLM</p>
+      </header>
+
+      <div class="example-list">
+        <div class="example-prompt">
+          <code>Dinner party: should I quit my job to start a company?</code>
+          <button class="copy-btn" data-copy="Dinner party: should I quit my job to start a company?" aria-label="Copy prompt">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+            <span class="copy-btn__text">Copy</span>
+          </button>
+        </div>
+        <div class="example-prompt">
+          <code>Get the British scientists to debate whether AI will replace programmers</code>
+          <button class="copy-btn" data-copy="Get the British scientists to debate whether AI will replace programmers" aria-label="Copy prompt">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+            <span class="copy-btn__text">Copy</span>
+          </button>
+        </div>
+        <div class="example-prompt">
+          <code>Renaissance dinner party about modern social media</code>
+          <button class="copy-btn" data-copy="Renaissance dinner party about modern social media" aria-label="Copy prompt">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+            <span class="copy-btn__text">Copy</span>
+          </button>
+        </div>
+        <div class="example-prompt">
+          <code>Add Sun Tzu and Machiavelli to debate my go-to-market strategy</code>
+          <button class="copy-btn" data-copy="Add Sun Tzu and Machiavelli to debate my go-to-market strategy" aria-label="Copy prompt">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+            <span class="copy-btn__text">Copy</span>
+          </button>
+        </div>
+        <div class="example-prompt">
+          <code>Full dinner on the future of education — use the Scottish Enlightenment table</code>
+          <button class="copy-btn" data-copy="Full dinner on the future of education — use the Scottish Enlightenment table" aria-label="Copy prompt">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+            <span class="copy-btn__text">Copy</span>
+          </button>
+        </div>
+        <div class="example-prompt">
+          <code>Quick round: what would the table think about universal basic income?</code>
+          <button class="copy-btn" data-copy="Quick round: what would the table think about universal basic income?" aria-label="Copy prompt">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+            <span class="copy-btn__text">Copy</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CROSS-LINK CALLOUT ===== -->
+  <section class="section callout">
+    <div class="container callout__inner">
+      <h3>Pairs with Animal Magic</h3>
+      <p>Run Rabbit mode to generate 10 ideas, then bring the best ones to the dinner table for debate.</p>
+      <a href="animal-magic.html" class="btn btn--secondary">Explore Animal Magic &rarr;</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__credit">Inspired by <a href="https://www.tomsguide.com/ai/i-use-the-rabbit-prompt-for-multiplying-my-ideas-and-its-a-game-changer" target="_blank" rel="noopener">Amanda Caswell's article on Tom's Guide</a></p>
+      <div class="footer__links">
+        <a href="https://github.com/louisgillies/mindframe" target="_blank" rel="noopener" class="footer__link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <span class="footer__sep" aria-hidden="true">/</span>
+        <span class="footer__license">MIT License</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/shared.js"></script>
+  <script src="../js/dinner-roster.js"></script>
+</body>
+</html>
