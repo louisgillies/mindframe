@@ -1,6 +1,6 @@
 ---
 name: mindframe
-description: Thinking framework skills for AI agents. Install the full plugin for all frameworks. First skill — Animal Magic — provides 7 animal-based cognitive modes for brainstorming, analysis, planning, and creative problem-solving.
+description: Thinking framework skills for AI agents. Install the full plugin for all frameworks. Includes Animal Magic (7 animal-based cognitive modes), Dinner Party (40 historical thinkers debate your ideas), and Cognitive Flex (exercise your reasoning before the AI answers).
 ---
 
 # Mindframe
@@ -21,3 +21,13 @@ For the complete experience with all thinking frameworks:
 Seven animal-based thinking frameworks: Rabbit (multiply ideas), Owl (deep analysis), Ant (small steps), Dolphin (creative solutions), Eagle (big picture), Beaver (practical systems), Elephant (cross-disciplinary connections).
 
 See the full skill at `skills/animal-magic/SKILL.md`.
+
+### Dinner Party
+Assemble history's greatest thinkers to debate your ideas — 40 guests tagged by locale, era, domain, and thinking style.
+
+See the full skill at `skills/dinner-party/SKILL.md`.
+
+### Cognitive Flex
+Exercise your reasoning before the AI answers. A cognitive fitness coach that prompts you to think first, then gives feedback on your thinking.
+
+See the full skill at `skills/cognitive-flex/SKILL.md`.

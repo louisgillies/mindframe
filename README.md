@@ -8,6 +8,7 @@ Thinking framework skills for Claude Code and other AI agents.
 |-------|-------------|---------|
 | Animal Magic | Seven animal-based thinking frameworks for brainstorming, analysis, planning, and creative problem-solving | [skills/animal-magic/SKILL.md](skills/animal-magic/SKILL.md) |
 | Dinner Party | Assemble history's greatest thinkers to debate your ideas — 40 guests tagged by locale, era, domain, and thinking style | [skills/dinner-party/SKILL.md](skills/dinner-party/SKILL.md) |
+| Cognitive Flex | Exercise your reasoning before the AI answers — a cognitive fitness coach that prompts you to think first | [skills/cognitive-flex/SKILL.md](skills/cognitive-flex/SKILL.md) |
 
 ## Animal Magic Quick Reference
 
@@ -63,6 +64,25 @@ cp -r mindframe/skills/* ~/.claude/skills/
 "Full dinner on the future of education — use the Scottish Enlightenment table"
 ```
 
+## Cognitive Flex Quick Reference
+
+| Step | What Happens |
+|------|-------------|
+| Detect & Prompt | Claude identifies question type and asks you to think first |
+| You Respond | Articulate your reasoning, instinct, or "I have no idea" |
+| Answer + Flex Report | Full answer plus feedback on your thinking |
+| Optional Deeper Flex | Explore interesting angles you raised |
+
+Question types: opinion/judgment, analysis/debugging, strategy/design, decision-making
+
+Bypass: say "just answer", "skip", or "no flex" to get the answer immediately
+
+```
+"Should I use a monorepo or separate repos for my microservices?"
+"What's the best way to handle authentication?"
+"Why is my deployment pipeline so slow?"
+```
+
 ## Usage
 
 Invoke any animal mode by describing how you want to think:
@@ -81,6 +101,7 @@ ChatGPT GPT versions are available for each skill:
 
 - **Animal Magic**: See [gpt/animal-magic/setup-guide.md](gpt/animal-magic/setup-guide.md)
 - **Dinner Party**: See [gpt/dinner-party/setup-guide.md](gpt/dinner-party/setup-guide.md)
+- **Cognitive Flex**: See [gpt/cognitive-flex/setup-guide.md](gpt/cognitive-flex/setup-guide.md)
 
 ## Website
 
