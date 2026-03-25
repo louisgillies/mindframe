@@ -1,0 +1,36 @@
+{
+  "name": "mindframe",
+  "owner": {
+    "name": "Louis G",
+    "email": ""
+  },
+  "metadata": {
+    "description": "Thinking framework skills for Claude Code — animal-based cognitive modes, expert roundtable debates, and cognitive fitness coaching",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "mindframe",
+      "source": ".",
+      "description": "Thinking framework skills: Animal Magic (structured brainstorming), Dinner Party (expert debate), and Cognitive Flex (reasoning before answers)",
+      "version": "1.0.0",
+      "author": {
+        "name": "Louis G"
+      },
+      "homepage": "https://louisgillies.github.io/mindframe",
+      "repository": "https://github.com/louisgillies/mindframe",
+      "license": "MIT",
+      "keywords": [
+        "skills",
+        "thinking-frameworks",
+        "brainstorming",
+        "creativity",
+        "analysis",
+        "mental-models",
+        "cognitive-flex",
+        "reasoning"
+      ],
+      "category": "productivity"
+    }
+  ]
+}
