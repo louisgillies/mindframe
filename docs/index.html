@@ -214,27 +214,23 @@
       <div class="tabs-wrap">
         <div class="tabs" role="tablist" aria-label="Installation methods">
           <button class="tab tab--active" role="tab" data-tab="claude">Claude Code</button>
-          <button class="tab" role="tab" data-tab="npm">npm</button>
           <button class="tab" role="tab" data-tab="chatgpt">ChatGPT</button>
           <button class="tab" role="tab" data-tab="manual">Manual</button>
         </div>
 
         <div class="tab-panels">
           <div class="tab-panel tab-panel--active" data-panel="claude">
-            <p class="tab-panel__intro">Run this command in your terminal:</p>
+            <p class="tab-panel__intro">Run these two slash commands inside Claude Code:</p>
             <div class="install-code">
-              <pre><code>/install github.com/louisgillies/mindframe</code></pre>
-              <button class="copy-btn" data-copy="/install github.com/louisgillies/mindframe" aria-label="Copy install command">
+              <pre><code>/plugin marketplace add louisgillies/mindframe</code></pre>
+              <button class="copy-btn" data-copy="/plugin marketplace add louisgillies/mindframe" aria-label="Copy install command">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
                 <span class="copy-btn__text">Copy</span>
               </button>
             </div>
-          </div>
-          <div class="tab-panel" data-panel="npm" hidden>
-            <p class="tab-panel__intro">Install globally via npm:</p>
             <div class="install-code">
-              <pre><code>npm install -g mindframe</code></pre>
-              <button class="copy-btn" data-copy="npm install -g mindframe" aria-label="Copy install command">
+              <pre><code>/plugin install mindframe@mindframe</code></pre>
+              <button class="copy-btn" data-copy="/plugin install mindframe@mindframe" aria-label="Copy install command">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
                 <span class="copy-btn__text">Copy</span>
               </button>
