@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "mindframe",
-      "source": ".",
+      "source": "./",
       "description": "Thinking framework skills: Animal Magic (structured brainstorming), Dinner Party (expert debate), and Cognitive Flex (reasoning before answers)",
       "version": "1.0.0",
       "author": {
